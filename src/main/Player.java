@@ -5,7 +5,7 @@ public class Player {
     private boolean isWhite;
 
 
-    public Player(String name, String isWhite) {
+    public Player(String name, boolean isWhite) {
         this.name = name;
         this.isWhite = isWhite;
 
@@ -29,10 +29,11 @@ public class Player {
     public void move(int x1,int y1,int x2,int y2, Field field){
         Figure[][] board= field.getBoard();
         if(isWhite == board[x1][y1].isWhite())  {
-            if()
+
 
         }
     }
+}
 
 
 
