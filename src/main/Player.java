@@ -47,10 +47,28 @@ public class Player {
                     return true;
 
                 }else if(figure.isKing()){
+                    if(x1<x2) {
+                        for (int i = x1; i <= x2; i++) {
+                            for (int j = y1; j <= y2; j++) {
+                                int count = 0;
+                                if (board[i][j] != null)
+                                    count += 1;
+                                if (count > 1) {
+                                    break;
+                                }
 
+                            }
+                        }
+                    }else{
+                        for (int i = x1; i >= x2; i--) {
+                            for (int j = y1; j <= y2; j++) {
+                                int count = 0;
+                                if (board[i][j] != null)
+                                    count += 1;
+                                if (count > 1) {
+                                    break;
 
                     }
-
                 }
 
             }
