@@ -32,5 +32,7 @@ public class Figure {
             return isWhite;
     }
 
+
+
 }
 
